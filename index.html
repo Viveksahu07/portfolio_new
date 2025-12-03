@@ -293,4 +293,405 @@
 
     .project-card:hover {
       transform: translateY(-6px);
-      box-shadow: 0 18px 45px rgba(15, 23, 42,
+      box-shadow: 0 18px 45px rgba(15, 23, 42, 1);
+      border-color: #38bdf8;
+    }
+
+    .project-icon {
+      font-size: 1.3rem;
+      margin-bottom: 8px;
+      color: #38bdf8;
+    }
+
+    .project-card h3 {
+      font-size: 1.05rem;
+      margin-bottom: 4px;
+      color: #e5e7eb;
+    }
+
+    .project-card p {
+      font-size: 0.9rem;
+      color: #9ca3af;
+    }
+
+    /* CONTACT */
+    #contact .contact-wrapper {
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+      gap: 28px;
+      align-items: center;
+      margin-top: 10px;
+    }
+
+    #contact p {
+      font-size: 0.95rem;
+      margin-bottom: 8px;
+      color: #e5e7eb;
+    }
+
+    #contact a {
+      color: #38bdf8;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    #contact a:hover {
+      text-decoration: underline;
+    }
+
+    .contact-card {
+      background: rgba(15, 23, 42, 0.95);
+      padding: 18px;
+      border-radius: 14px;
+      border: 1px solid rgba(148, 163, 184, 0.3);
+      box-shadow: 0 12px 30px rgba(15, 23, 42, 0.9);
+      font-size: 0.9rem;
+    }
+
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 8px 10px;
+      border-radius: 10px;
+      border: 1px solid rgba(148, 163, 184, 0.6);
+      background: rgba(15, 23, 42, 0.8);
+      color: #e5e7eb;
+      font-size: 0.9rem;
+      outline: none;
+    }
+
+    .contact-form input:focus,
+    .contact-form textarea:focus {
+      border-color: #38bdf8;
+    }
+
+    .contact-form textarea {
+      resize: vertical;
+      min-height: 80px;
+    }
+
+    .contact-avatar {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .contact-avatar img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid rgba(56, 189, 248, 0.7);
+      box-shadow: 0 12px 30px rgba(15, 23, 42, 0.9);
+    }
+
+    /* FOOTER */
+    footer {
+      background: #020617;
+      color: #9ca3af;
+      text-align: center;
+      padding: 18px;
+      border-top: 1px solid rgba(51, 65, 85, 0.8);
+      margin-top: 40px;
+    }
+
+    .social-icons {
+      margin: 10px 0 6px;
+    }
+
+    .social-icons a {
+      margin: 0 8px;
+      color: #e5e7eb;
+      font-size: 1.4rem;
+      transition: 0.3s;
+    }
+
+    .social-icons a:hover {
+      color: #38bdf8;
+      transform: translateY(-2px);
+    }
+
+    /* BACK TO TOP BUTTON */
+    .back-to-top {
+      position: fixed;
+      right: 16px;
+      bottom: 16px;
+      width: 38px;
+      height: 38px;
+      border-radius: 999px;
+      border: 1px solid rgba(148, 163, 184, 0.7);
+      background: rgba(15, 23, 42, 0.9);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      font-size: 1.1rem;
+      color: #e5e7eb;
+      box-shadow: 0 8px 20px rgba(15, 23, 42, 0.9);
+      transition: 0.3s;
+      z-index: 900;
+    }
+
+    .back-to-top:hover {
+      transform: translateY(-3px);
+      border-color: #38bdf8;
+      color: #38bdf8;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 900px) {
+      #contact .contact-wrapper {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 768px) {
+      header {
+        padding: 10px 18px;
+      }
+
+      #hero {
+        padding: 70px 18px 40px;
+        text-align: center;
+      }
+
+      .hero-text {
+        text-align: center;
+      }
+
+      .hero-buttons {
+        justify-content: center;
+      }
+
+      .hero-tags {
+        justify-content: center;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .nav-left a {
+        margin: 0 6px;
+        font-size: 0.85rem;
+      }
+
+      .hero-text h1 {
+        font-size: 2.1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header>
+    <div class="logo">Vivek<span>.dev</span></div>
+    <div class="nav-left">
+      <a href="#hero">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-text">
+      <div class="hero-chip">
+        <i class="fa-solid fa-code"></i>
+        Aspiring Web Developer • 1st Year CSE
+      </div>
+
+      <h1>Hi, I'm <span>Vivek</span> 👋</h1>
+      <p>
+        I’m a self-learning web developer who loves building clean and simple websites.
+        Currently exploring HTML, CSS, and JavaScript while balancing college life and new experiments.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#projects" class="btn-primary">
+          <i class="fa-solid fa-rocket"></i>
+          View Projects
+        </a>
+        <a href="#contact" class="btn-outline">
+          <i class="fa-solid fa-envelope"></i>
+          Contact Me
+        </a>
+      </div>
+
+      <div class="hero-tags">
+        <span>#HTML</span>
+        <span>#CSS</span>
+        <span>#JavaScript (learning)</span>
+        <span>#College Coder</span>
+      </div>
+    </div>
+
+    <div class="hero-image">
+      <!-- apni photo ka link yahan daal sakta hai -->
+      <img src="https://imgs.search.brave.com/CLvEyTUEOqQe5DyA9Uq9yTaLzIPl_WURmPwP6Z_bGGU/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly90aHVt/YnMuZHJlYW1zdGlt/ZS5jb20vYi9zY2hv/b2wtYm95LXByb2Zp/bGUtYXZhdGFyLWlj/b24taXNvbGF0ZWQt/bWFsZS1jYXJ0b29u/LWNoYXJhY3Rlci1w/b3J0cmFpdC1mYWNl/LWZsYXQtc2Nob29s/LWJveS1wcm9maWxl/LWF2YXRhci1pY29u/LWlzb2xhdGVkLW1h/bGUtMTIxODY2ODg4/LmpwZw" alt="Vivek's Photo" />
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="section-inner">
+      <h2>About Me</h2>
+      <p class="section-subtitle">Who am I beyond the code?</p>
+      <p>
+        I'm a B.Tech CSE student who enjoys turning ideas into web pages.
+        I'm focused on learning the core web technologies step by step, starting with HTML & CSS and then moving into JavaScript.
+        My goal is to build real-world projects, improve daily, and eventually contribute to bigger products and open-source.
+      </p>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="section-inner">
+      <h2>Skills</h2>
+      <p class="section-subtitle">What I'm currently working with</p>
+
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3>HTML</h3>
+          <p>Semantic structure, basic forms, tables, lists, and basic SEO-friendly markup.</p>
+          <div class="skill-level">
+            <div class="skill-bar" style="width: 75%;"></div>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <h3>CSS</h3>
+          <p>Layouts with Flexbox, basic responsive design, colors, typography, and hover effects.</p>
+          <div class="skill-level">
+            <div class="skill-bar" style="width: 65%;"></div>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <h3>Git & GitHub</h3>
+          <p>Pushing code, managing simple projects, and deploying using GitHub Pages.</p>
+          <div class="skill-level">
+            <div class="skill-bar" style="width: 55%;"></div>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <h3>Next Goals</h3>
+          <p>Learn JavaScript properly and then move into React for modern web apps.</p>
+          <div class="skill-level">
+            <div class="skill-bar" style="width: 40%;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="section-inner">
+      <h2>Projects</h2>
+      <p class="section-subtitle">Small but meaningful steps</p>
+
+      <div class="container">
+        <div class="project-card">
+          <div class="project-icon">
+            <i class="fa-solid fa-id-badge"></i>
+          </div>
+          <h3>Portfolio Website</h3>
+          <p>A responsive personal portfolio built using pure HTML and CSS, deployed with GitHub Pages.</p>
+        </div>
+
+        <div class="project-card">
+          <div class="project-icon">
+            <i class="fa-solid fa-file-lines"></i>
+          </div>
+          <h3>Resume Layout (Concept)</h3>
+          <p>A clean resume layout designed in HTML & CSS to understand sections, alignment, and typography.</p>
+        </div>
+
+        <!-- Planned Project 1 -->
+        <div class="project-card">
+          <div class="project-icon">
+            <i class="fa-solid fa-question-circle"></i>
+          </div>
+          <h3>Quiz App (Planned)</h3>
+          <p>Upcoming project using JavaScript to create a simple quiz with score tracking.</p>
+        </div>
+
+        <!-- New Planned Project ADDED -->
+        <div class="project-card">
+          <div class="project-icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+          <h3>Lost & Found Web App (Planned)</h3>
+          <p>An online platform where users can report lost items and help others find their belongings using a simple UI.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="section-inner">
+      <h2>Contact Me</h2>
+      <p class="section-subtitle">Let’s talk about projects, ideas, or collabs</p>
+
+      <div class="contact-wrapper">
+        <div class="contact-card">
+          <p>Email: <a href="mailto:sahujivk07@gmail.com">sahujivk07@gmail.com</a></p>
+          <p>Phone: <a href="tel:+919630569476">+91-9630569476</a></p>
+          <p style="margin-top: 10px;">
+            I'm open to learning opportunities, beginner projects, and guidance from experienced developers.
+          </p>
+
+          <form class="contact-form" onsubmit="alert('This is a demo form. Connect via email to actually reach me!'); return false;">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn-primary" style="border-radius: 10px; justify-content: center;">
+              <i class="fa-solid fa-paper-plane"></i>
+              Send Message (Demo)
+            </button>
+          </form>
+        </div>
+
+        <div class="contact-avatar">
+          <img src="https://imgs.search.brave.com/CLvEyTUEOqQe5DyA9Uq9yTaLzIPl_WURmPwP6Z_bGGU/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly90aHVt/YnMuZHJlYW1zdGlt/ZS5jb20vYi9zY2hv/b2wtYm95LXByb2Zp/bGUtYXZhdGFyLWlj/b24taXNvbGF0ZWQt/bWFsZS1jYXJ0b29u/LWNoYXJhY3Rlci1w/b3J0cmFpdC1mYWNl/LWZsYXQtc2Nob29s/LWJveS1wcm9maWxl/LWF2YXRhci1pY29u/LWlzb2xhdGVkLW1h/bGUtMTIxODY2ODg4/LmpwZw" alt="Vivek's Photo" />
+          <p style="font-size: 0.9rem; color: #9ca3af;">
+            Thanks for scrolling this far ✨<br>Let’s build something awesome.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Follow me:</p>
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+    </div>
+    <p>© 2025 Vivek | Built with HTML & CSS</p>
+  </footer>
+
+  <!-- Back to top button -->
+  <div class="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+    <i class="fa-solid fa-arrow-up"></i>
+  </div>
+
+</body>
+</html>
